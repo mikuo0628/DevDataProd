@@ -13,6 +13,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(leaflet)
 my_map <- leaflet() %>%
-  addTiles()
+  addTiles() %>%
+  addMarkers(lng = -122.0610, lat = 37.3868, popup = 'Coursera Head Office')
 my_map
 ```
