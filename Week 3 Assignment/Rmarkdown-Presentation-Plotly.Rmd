@@ -1,0 +1,26 @@
+---
+title: "RMarkdown Presentation and Plotly"
+subtitle: "Developing Data Products, Week 3 Peer-reviewed Assignment"
+author: "Michael Kuo"
+date: "28 October, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+Using `diamonds` dataset from `ggplot2`, here's a plot that distributes diamonds, price vs carat, where the size of carat is reflected in the size of data point.  
+```{r, message = FALSE, warning = FALSE}
+library(plotly)
+library(ggplot2)
+library(stringr)
+diamond_subset <- diamonds[sample(nrow(diamonds), 1000),]
+fig <- plot_ly(
+  data = diamond_subset, x = ~ carat, y = ~ price, 
+  color = ~ carat, size = ~ carat,
+  text = ~ paste('Cut: ', cut, '<br>', 'Price: ', price)
+)
+fig
+
+```
