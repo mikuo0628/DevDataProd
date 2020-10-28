@@ -3,15 +3,16 @@ title: "RMarkdown Presentation and Plotly"
 subtitle: "Developing Data Products, Week 3 Peer-reviewed Assignment"
 author: "Michael Kuo"
 date: "28 October, 2020"
-output: html_document
+output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Plotly
 Using `diamonds` dataset from `ggplot2`, here's a plot that distributes diamonds, price vs carat, where the size of carat is reflected in the size of data point.  
-```{r, message = FALSE, warning = FALSE}
+```{r, echo = FALSE, message = FALSE, warning = FALSE, fig.align='center'}
 library(plotly)
 library(ggplot2)
 library(stringr)
