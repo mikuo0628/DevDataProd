@@ -1,0 +1,18 @@
+---
+title: "Markdown and Leaflet"
+subtitle: "Developing Data Products, Week 2 Peer-reviewed Assignment"
+author: "Michael Kuo"
+date: "28 October, 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(leaflet)
+my_map <- leaflet() %>%
+  addTiles()
+my_map
+```
