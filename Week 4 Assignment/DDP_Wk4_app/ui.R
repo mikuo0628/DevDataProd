@@ -7,6 +7,9 @@
 #    http://shiny.rstudio.com/
 #
 
+default_corp_url <- 'http://www.gutenberg.org/cache/epub/2242/pg2242.txt'
+# default_corp <- readLines(default_corp_url)
+default_corp <- readr::read_file(default_corp_url)
 
 library(shiny)
 
