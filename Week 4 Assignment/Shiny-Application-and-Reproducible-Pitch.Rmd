@@ -32,7 +32,7 @@ Word cloud is an excellent visualization of prevalent words in a body of text an
 
 In this app, you can paste any text into the designated field and generate a word cloud based on it.
 
-By default, I've inputted the famous Shakespeare play, *A Midsommer Night's Dream*, and generated an example word cloud.
+By default, I've inputted the famous Shakespeare play, *A Midsummer Night's Dream*, and generated an example word cloud.
 
 ## Example Word Cloud from my app
-![A Midsommer Night's Dream](WC.png)
+![A Midsummer Night's Dream](WC.png)
